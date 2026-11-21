@@ -32,7 +32,7 @@ public class MenuPrincipal extends JFrame {
     private void initComponents() {
         setTitle("Mao na Roda - Menu principal");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(520, 380);
+        setSize(520, 420);
         setResizable(false);
         setLocationRelativeTo(null);
 
@@ -65,7 +65,7 @@ public class MenuPrincipal extends JFrame {
         painel.add(botaoSolicitacoes);
 
         botaoSair = new JButton("Sair");
-        botaoSair.setBounds(130, 290, 260, 30);
+        botaoSair.setBounds(130, 325, 260, 30);
         painel.add(botaoSair);
 
         getContentPane().add(painel);
