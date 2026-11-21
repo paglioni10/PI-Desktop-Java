@@ -6,6 +6,7 @@ import View.ListaUsuarios;
 import View.Login;
 import View.MenuPrincipal;
 import View.NovaSolicitacao;
+import View.Sobre;
 
 public class MenuPrincipalController {
 
@@ -35,6 +36,11 @@ public class MenuPrincipalController {
         view.dispose();
     }
 
+    public void abrirSobre() {
+        new Sobre().setVisible(true);
+        view.dispose();
+    }
+    
     public void sair() {
         Sessao.encerrar();
         new Login().setVisible(true);
