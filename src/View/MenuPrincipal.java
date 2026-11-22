@@ -21,6 +21,7 @@ public class MenuPrincipal extends JFrame {
     private JButton botaoNovaSolicitacao;
     private JButton botaoSolicitacoes;
     private JButton botaoSobre;
+    private JButton botaoResumo;
     private JButton botaoSair;
     
 
@@ -70,6 +71,10 @@ public class MenuPrincipal extends JFrame {
         botaoSobre.setBounds(130, 285, 125, 30);
         painel.add(botaoSobre);
 
+        botaoResumo = new JButton("Resumo");
+        botaoResumo.setBounds(265, 285, 125, 30);
+        painel.add(botaoResumo);
+
         botaoSair = new JButton("Sair");
         botaoSair.setBounds(130, 325, 260, 30);
         painel.add(botaoSair);
@@ -96,6 +101,8 @@ public class MenuPrincipal extends JFrame {
         botaoNovaSolicitacao.addActionListener(evento -> controller.abrirNovaSolicitacao());
         botaoSolicitacoes.addActionListener(evento -> controller.abrirSolicitacoes());
         botaoSobre.addActionListener(evento -> controller.abrirSobre());
+
+        botaoResumo.addActionListener(evento -> controller.abrirResumo());
         botaoSair.addActionListener(evento -> controller.sair());
     }
 

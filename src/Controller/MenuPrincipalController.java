@@ -7,6 +7,7 @@ import View.Login;
 import View.MenuPrincipal;
 import View.NovaSolicitacao;
 import View.Sobre;
+import View.Resumo;
 
 public class MenuPrincipalController {
 
@@ -38,6 +39,11 @@ public class MenuPrincipalController {
 
     public void abrirSobre() {
         new Sobre().setVisible(true);
+        view.dispose();
+    }
+
+    public void abrirResumo() {
+        new Resumo().setVisible(true);
         view.dispose();
     }
     
